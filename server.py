@@ -147,7 +147,7 @@ def check_and_start_server(driver):
         try:
             print(f"Checking server status (attempt {attempt + 1}/{max_retries})...")
             
-            driver.get("https://www.mcserverhost.com/servers/e9750610/dashboard")
+            driver.get("https://www.mcserverhost.com/servers/d8cccc8a-a6c8-41a9-a2f9-58e64a67ea3a")
             time.sleep(5)  
             
             current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
