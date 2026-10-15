@@ -111,7 +111,7 @@ def setup_driver():
 def login_to_mcserverhost(driver, username, password):
     try:
         print("Logging in...")
-        driver.get("https://www.mcserverhost.com/login")
+        driver.get("https://www.beta.mcserverhost.com/login")
         
         username_field = WebDriverWait(driver, 15).until(
             EC.presence_of_element_located((By.ID, "auth-username"))
@@ -147,7 +147,7 @@ def check_and_start_server(driver):
         try:
             print(f"Checking server status (attempt {attempt + 1}/{max_retries})...")
             
-            driver.get("https://www.mcserverhost.com/servers/e9750610/dashboard")
+            driver.get("https://www.beta.mcserverhost.com/servers/e9750610/dashboard")
             time.sleep(5)  
             
             current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
